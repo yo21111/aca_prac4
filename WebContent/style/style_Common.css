@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+@import url(/source/style_Reset.css);
+
+div#wrap {
+	width: 830px;
+	margin: 0 auto;
+	padding: 20px 0;
+	background-color: #f4f4ea;
+}
+
+/* nav#nav 시작 */
+nav#nav>ul#navList {
+	justify-content: center;
+	margin: 20px 0;
+}
+
+#navList>li.navLi {
+	font-size: 18px;
+	padding: 5px 20px;
+}
+
+#navList>li.navLi>a {
+	font-weight: bold;
+	color: #aaa;
+}
+
+#navList>li.navLi:hover>a {
+	color: #333;
+	font-weight: bold;
+	font-size: 19px;
+}
+/* nav#nav 끝 */
+
+/* main#main 시작 */
+main#main {
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+main#main>div.main_container {
+	width: 380px;
+	margin: 10px 5px;
+	padding: 10px;
+}
+
+main#main>div.main_container>div.hidden {
+	display:none;
+}
+
+main#main>div.main_container>div.image {
+	text-align: center;
+}
+
+main#main>div.main_container>div.image>img {
+	width: 350px;
+	border-radius: 20% 20% 20% 0;
+}
+
+.main_container>div.title {
+	margin: 10px 0;
+	font-size: 16px;
+	color: #777;
+	text-align: center;
+}
+
+.main_container>div.price {
+	font-size: 23px;
+	font-weight: bold;
+	color: #000;
+	text-align: center;
+}
+
+.main_container>div.price>span.beforeSale {
+	text-decoration: line-through;
+	color: #aaa;
+	margin-right: 5px;
+	display:none;
+	/* display:inline */
+}
+.main_container>div.price>span.beforeSale::before {
+	content:"￦";
+}
+.main_container>div.price>span.afterSale::before {
+	content:"￦";
+}
+
+.main_container>div.etc {
+	margin-top: 10px;
+	text-align: center;
+}
+
+.main_container>div.etc>img {
+	display: none;
+	/* display:inline; */
+}
+/* main#main 끝 */
